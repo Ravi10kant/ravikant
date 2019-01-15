@@ -1,0 +1,17 @@
+cd c:\xampp\mysql\bin
+mysql -u root --password
+mp( database )
+student(table)
+   
+
+std_id int NOT NULL AUTO_INCREMENT
+std_name
+std_father_name
+std_mother_name
+std_email
+std_phone
+std_department
+std_address
+std_join_date
+std_pasword
+std_dob

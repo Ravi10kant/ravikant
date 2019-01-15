@@ -1,0 +1,50 @@
+SHOW DATABASES ---- number of database display
+USE itm; ---- use databse
+CREATE TABLE dance(id int NOT NULL AUTO_INCREMENT, name varchar(50), roll varchar(10), phone int(10), address varchar(50), branch varchar(50),PRIMARY KEY(id));--- to create table
+DESC dance;---- show table
+
+SHOW TABLES; --- show all table in db;
+INSERT INTO cooking(name, father_name,phone,colg,branch) VALUES ("SHIVAM","PRAMOD SHRIVASTAVA",9630955864,"ITM","CSE"); ----- insert data into table
+select* from name; ---- to show data inserted in table
+
+INSERT INTO singing values ("Sanju","ACTING",963095586,"MIFA",1654); ---- without using table coloum''
+select id,stu_name from student;----- select particular data from table
+
+select id,stu_name,stu_dept from student limit 2;----------- to limit nuber of data output from table
+
+select id,stu_name,stu_dept from student limit 3,6;------------ to limit number of data output from selected number form;
+
+select* from student where id=5;-------- output the particular id
+
+select* from student where stu_dept="cse";--------- output the particual who have particular data;
+
+select* from new where name="sanju" and phn=1234;--------- AND opereator use;
+
+
+select* from new where name IN ("sanju","shivam");---------- output the recod of data of particular detail;
+select* from new where name not IN ("sanju","shivam");---------- output the recod of data of particular except those deatil;
+
+
+
+select id, name from new where id between 2 and 5;-------output dtaba b/w the limit;
+
+
+select* from stdu where (salary between 20000 and 50000) and dept in ('cse','IT');-------
+
+select* from stdu where name like '%sh%';---------- %n,n%
+
+select* from stdu where name not like '%sh%';
+
+
+select* from stdu order by id  desc;  asc
+
+create table sanju(name varchar(50) unique key ,city  varchar(50));
+
+
+
+select* from stduent where name is NULL;
+select* from stduent where name is not NULL;
+
+ 
+
+
